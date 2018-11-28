@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-
+import React, { Component, Fragment } from "react";
 import "./App.css";
 import Toggle from "./ToggleRPC";
+import Portal from "./Portal";
 
 class App extends Component {
   render() {
@@ -9,12 +9,13 @@ class App extends Component {
       <div className="App">
         <Toggle>
           {({ on, toggle }) => (
-            <div>
+            <Fragment>
               {on && <h1>I love banana</h1>}
               <button onClick={toggle}>Show/Hide</button>
-            </div>
+            </Fragment>
           )}
         </Toggle>
+        <Portal>hi, I am a portal</Portal>
       </div>
     );
   }
