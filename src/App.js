@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from "react";
 import "./App.css";
-import { Toggle, Portal, Modal } from "./Utilities";
+import { Toggle } from "Utilities";
+import { Modal } from "Elements";
 
 class App extends Component {
   render() {
@@ -16,7 +17,6 @@ class App extends Component {
             </Fragment>
           )}
         </Toggle>
-        <Portal>hi, I am a portal</Portal>
       </div>
     );
   }
